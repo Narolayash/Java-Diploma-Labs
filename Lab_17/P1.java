@@ -17,6 +17,7 @@ public class P1 {
         String numStr = String.valueOf(num);
         System.out.println("valueOf: " + numStr);
 
+        System.out.println("toString: " + str1);
         System.out.println("toString: " + str1.toString());
         System.out.println("substring(1,4): " + str1.substring(1,4));
     }

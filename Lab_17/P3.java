@@ -10,9 +10,8 @@ public class P3 {
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
 
-        if(str.length() % 2 == 0)
-            System.out.println("String length is EVEN");
-        else
-            System.out.println("String length is ODD");
+        for (int i=0; i<str.length(); i++) {
+            if ((i & 1) == 1) System.out.println(str.charAt(i));
+        }
     }
 }

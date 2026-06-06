@@ -28,7 +28,7 @@ final class FinalClass {
         System.out.println("This is a final class");
     }
 }
-// class Test extends FinalClass { }  ❌ ERROR: cannot inherit final class
+// class Test extends FinalClass { }   ERROR: cannot inherit final class
 
 public class P3 {
 }

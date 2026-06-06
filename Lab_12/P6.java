@@ -3,11 +3,12 @@ package Lab_12;
 import java.util.Scanner;
 
 // 6) Write a program to find the second largest and second smallest number in an array. (C)
+
 public class P6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter size: ");
+        System.out.println("Enter size: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
 
@@ -18,18 +19,59 @@ public class P6 {
 
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
-        for(int i=0;i<n;i++){
-            if(arr[i] > largest){
+        int smallest = Integer.MAX_VALUE;
+        int secondSmallest = Integer.MAX_VALUE;
+
+        for (int i=0; i<n; i++) {
+            if (arr[i] > largest) {
                 secondLargest = largest;
                 largest = arr[i];
             }
-            else if(arr[i] > secondLargest && arr[i] != largest){
+            if (arr[i] > secondLargest && arr[i] != largest) {
                 secondLargest = arr[i];
+            }
+
+            if (arr[i] < smallest) {
+                secondSmallest = smallest;
+                smallest = arr[i];
+            }
+            if (arr[i] < secondSmallest && arr[i] != smallest) {
+                secondSmallest = arr[i];
             }
         }
 
         System.out.println("Second Largest = " + secondLargest);
+        System.out.println("Second Smallest = " + secondSmallest);
     }
+}
+
+//public class P6 {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        System.out.print("Enter size: ");
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//
+//        System.out.println("Enter elements:");
+//        for(int i=0;i<n;i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//
+//        int largest = Integer.MIN_VALUE;
+//        int secondLargest = Integer.MIN_VALUE;
+//        for(int i=0;i<n;i++){
+//            if(arr[i] > largest){
+//                secondLargest = largest;
+//                largest = arr[i];
+//            }
+//            else if(arr[i] > secondLargest && arr[i] != largest){
+//                secondLargest = arr[i];
+//            }
+//        }
+//
+//        System.out.println("Second Largest = " + secondLargest);
+//    }
 
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
@@ -55,4 +97,4 @@ public class P6 {
 //
 //        System.out.println("Second Largest = " + secondLargest);
 //    }
-}
+//}

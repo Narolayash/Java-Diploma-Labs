@@ -10,6 +10,7 @@ int main () {
         digits++;
         cp /= 10;
     }
+    // log10 no use kri ne number of digits madi sake
 
     cp = n;
     int sum = 0;

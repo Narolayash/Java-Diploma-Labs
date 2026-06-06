@@ -19,6 +19,11 @@ public class P2 {
         sb.reverse();
         System.out.println("Reverse: " + sb);
 
+        System.out.println("first character: " + sb.charAt(0));
+
+        sb.replace(0, 1, "Y");
+        System.out.println("after replace: " + sb);
+
         // Default capacity = 16 characters
         // capacity() returns total storage allocated to StringBuffer, not current size.
         System.out.println("Capacity: " + sb.capacity());

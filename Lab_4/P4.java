@@ -19,6 +19,7 @@ public class P4 {
         double heightM = inches * 0.0254;
 
         double bmi = weightKg / (heightM * heightM);
-        System.out.println("BMI = " + bmi);
+        System.out.printf("BMI = %.2f",bmi);
+//        System.out.println("BMI = " + bmi);
     }
 }
