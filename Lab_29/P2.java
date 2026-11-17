@@ -10,11 +10,13 @@ public class P2 {
             FileReader fr = new FileReader("source.txt");
             FileWriter fw = new FileWriter("destination.txt");
 
-            int ch;
-            while((ch = fr.read()) != -1) {
-                System.out.print((char)ch); // console output
-                fw.write(ch);               // write to file
-            }
+            System.out.println(fr.read());
+
+            // int ch;
+            // while((ch = fr.read()) != -1) {
+            //     System.out.print((char)ch); // console output
+            //     fw.write(ch);               // write to file
+            // }
 
             fr.close();
             fw.close();

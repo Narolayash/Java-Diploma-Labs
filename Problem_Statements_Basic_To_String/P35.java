@@ -1,0 +1,28 @@
+package Problem_Statements_Basic_To_String;
+
+// 35 Given an array, rotate the array to the right by k steps, where k is non-negative.
+//Example 1:
+//Input: nums = [1,2,3,4,5,6,7], k = 3
+//Output: [5,6,7,1,2,3,4]
+//Explanation:
+//rotate 1 step to the right: [7,1,2,3,4,5,6]
+//rotate 2 steps to the right: [6,7,1,2,3,4,5]
+//rotate 3 steps to the right: [5,6,7,1,2,3,4]
+
+public class P35 {
+    public static void reverse(int[] arr, int start, int end) {
+        for (i)
+    }
+
+    public static void solution(int[] arr, int k) {
+        reverse(arr, 0, arr.length - 1);
+        reverse(arr, 0, k);
+        reverse(arr, k + 1, arr.length - 1);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = new int[] {1, 2, 3, 4, 5, 6, 7};
+        solution(arr, 3);
+        System.out.println();
+    }
+}

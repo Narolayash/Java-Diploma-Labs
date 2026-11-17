@@ -1,7 +1,7 @@
 package Lab_17;
 
 // 1) Write a program to demonstrate the built-in function of String class. (e.g. length(),
-//charAt(), concat(), indexOf(), equals(), valueOf(), toString (), trim(), substring()) (A)
+//charAt(), concat(), indexOf(), equals(), valueOf(), toString(), trim(), substring()) (A)
 public class P1 {
     public static void main(String[] args) {
         String str1 = "Hello";

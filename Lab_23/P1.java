@@ -2,12 +2,12 @@ package Lab_23;
 
 // 1) Design a class named MyPoint to represent a point with x- and y-coordinates. The class
 //contains: The data fields x and y that represent the coordinates with getter methods. (A)
-//o a no-arg constructor that creates a point (0, 0).
-//o a constructor that constructs a point with specified coordinates.
-//이 a method named distance that returns the distance from this point to a specified
-//point of the MyPoint type.
-//o a method named distance that returns the distance from this point to another
-//point with specified x- and y-coordinates.
+// a no-arg constructor that creates a point (0, 0).
+// a constructor that constructs a point with specified coordinates.
+// a method named distance that returns the distance from this point to a specified
+// point of the MyPoint type.
+// a method named distance that returns the distance from this point to another
+// point with specified x- and y-coordinates.
 
 class MyPoint {
     private double x;
@@ -35,7 +35,7 @@ class MyPoint {
     }
 
     // Distance to specified coordinates
-    double distance(double x, double y) {
+    double distance(double x, double y)  {
         return Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
     }
 }
@@ -61,8 +61,8 @@ class ThreeDPoint extends MyPoint {
     double distance(ThreeDPoint p) {
         return Math.sqrt(
                 Math.pow(getX() - p.getX(), 2) +
-                        Math.pow(getY() - p.getY(), 2) +
-                        Math.pow(getZ() - p.getZ(), 2)
+                Math.pow(getY() - p.getY(), 2) +
+                Math.pow(getZ() - p.getZ(), 2)
         );
     }
 }
