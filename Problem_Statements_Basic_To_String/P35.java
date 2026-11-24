@@ -9,20 +9,29 @@ package Problem_Statements_Basic_To_String;
 //rotate 2 steps to the right: [6,7,1,2,3,4,5]
 //rotate 3 steps to the right: [5,6,7,1,2,3,4]
 
+// 0 1 2 3 4 5 6
+// 1 2 3 4 5 6 7
+
+import java.util.Arrays;
+
 public class P35 {
     public static void reverse(int[] arr, int start, int end) {
-        for (i)
+        while (start < end) {
+            int temp = arr[start];
+            arr[start++] = arr[end];
+            arr[end--] = temp;
+        }
     }
 
     public static void solution(int[] arr, int k) {
         reverse(arr, 0, arr.length - 1);
-        reverse(arr, 0, k);
-        reverse(arr, k + 1, arr.length - 1);
+        reverse(arr, 0, k-1);
+        reverse(arr, k, arr.length - 1);
     }
 
     public static void main(String[] args) {
         int[] arr = new int[] {1, 2, 3, 4, 5, 6, 7};
         solution(arr, 3);
-        System.out.println();
+        System.out.println(Arrays.toString(arr));
     }
 }
